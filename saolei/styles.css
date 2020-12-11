@@ -1,0 +1,153 @@
+td {
+    border:blueviolet 1px solid;
+    width:20px;
+    height:20px;
+    background-color: rgb(237, 236, 241);
+    box-sizing: border-box;
+    position: relative;
+    padding:0;
+}
+
+td > .cell{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    text-align:center;
+    color: rgb(237, 236, 241);
+    
+}
+
+td > .cell.clear{
+    background-color: #fff;
+    color:rgb(107, 21, 204);
+}
+
+td > .cell.exploded{
+    background-color: rgb(18, 29, 184);
+    color: #999;
+}
+
+table.exploded,table.exploded td{
+    background-color:rgb(18, 29, 184);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image:url(./img.JPG);
+    background-size:cover;
+}
+#game{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    align-items:fit-content;
+}
+.banner{
+    margin-top: 20px;
+    font-size: 2em;
+    height: 1.5em;
+}
+.welcome button{
+    background-image: url(./image2.jpg);
+    background-size: cover;
+    color:rgb(11, 122, 187);
+    font-size: 1.8em;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-radius: 5px;
+
+}
+td {
+    border:blueviolet 1px solid; 
+    width: 20px;
+    height: 20px;
+    background-color:rgb(237, 236, 241);
+    box-sizing: border-box;
+    position: relative;
+    padding:0;
+
+}
+
+
+
+td > .cell{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    text-align:center;
+    color:rgb(247,236,241);
+}
+td>.cell.clear{
+    background-color: #ffffff;
+    color:rgb(107, 21, 204);
+}
+td>.cell.exploded{
+    background-color:rgb(18, 29, 184);
+    color: #999;
+}
+table.exploded,table.exploded td{
+    background-color:rgb(18, 29, 184);
+}
+.loser{position: fixed;
+    background-image: url(./gif3.gif);
+    background-size: 600px 150px;
+    border-radius: 40px;
+    border-style: groove;
+    border-color: rgb(253, 253, 250);
+    color: rgb(252, 251, 248);
+    left: 340px;
+    right: 340px;
+    top: 250px;
+    bottom:0 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loser h3{
+    font-size: 2em;
+
+
+}
+.winner {position: fixed;
+    background-image: url(./gif4.gif);
+    background-size:600px 150px;
+    border-radius: 40px;
+    border-style: groove;
+    border-color: rgb(253, 253, 250);
+    color: rgb(252, 251, 248);
+    left: 340px;
+    right: 340px;
+    top: 250px;
+    bottom:0 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.winner h3{
+    font-size: 2em;
+
+
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+
+}
+.welcome button{
+    margin: 20px;;
+}
